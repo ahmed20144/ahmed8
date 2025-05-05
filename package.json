@@ -2,7 +2,7 @@
   "name": "surveylink",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://surveylink.github.io/ahmed8",
+  "homepage": "https://ahmed20144.github.io/ahmed8",
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
     "@supabase/supabase-js": "^2.39.0",
