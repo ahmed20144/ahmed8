@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نشر المشروع على GitHub Pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #0366d6;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 10px;
+        }
+        .step {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            background-color: #f6f8fa;
+        }
+        .step h2 {
+            margin-top: 0;
+            color: #24292e;
+        }
+        .note {
+            padding: 15px;
+            background-color: #fffbdd;
+            border: 1px solid #ffe58f;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        code {
+            background-color: #f3f4f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f3f4f5;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #2ea44f;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #2c974b;
+        }
+    </style>
+</head>
+<body>
+    <h1>كيفية نشر المشروع على GitHub Pages</h1>
+    
+    <div class="note">
+        <strong>ملاحظة هامة:</strong> هذا الملف يحتوي على تعليمات لمساعدتك في نشر مشروع React على GitHub Pages.
+    </div>
+    
+    <div class="step">
+        <h2>الخطوة 1: إنشاء فرع gh-pages</h2>
+        <ol>
+            <li>افتح مستودعك على GitHub في المتصفح: <a href="https://github.com/ahmed20144/ahmed8" target="_blank">https://github.com/ahmed20144/ahmed8</a></li>
+            <li>انقر على القائمة المنسدلة للفروع (تظهر حاليًا "main")</li>
+            <li>اكتب "gh-pages" في مربع النص</li>
+            <li>انقر على "Create branch: gh-pages from 'main'"</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <h2>الخطوة 2: حذف جميع الملفات من فرع gh-pages</h2>
+        <ol>
+            <li>تأكد من أنك على فرع gh-pages (يظهر في القائمة المنسدلة)</li>
+            <li>انقر على أي ملف، ثم انقر على أيقونة سلة المهملات لحذفه</li>
+            <li>اكتب رسالة وصفية مثل "إزالة الملفات للإعداد" في نموذج الحذف</li>
+            <li>انقر على "Commit changes"</li>
+            <li>كرر هذه العملية لجميع الملفات حتى يصبح الفرع فارغًا</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <h2>الخطوة 3: رفع ملفات البناء</h2>
+        <ol>
+            <li>تأكد من أنك على فرع gh-pages</li>
+            <li>انقر على "Add file" ثم "Upload files"</li>
+            <li>اسحب وأفلت <strong>محتويات</strong> مجلد build (وليس المجلد نفسه) من جهازك</li>
+            <li>اكتب رسالة وصفية مثل "رفع ملفات البناء" في نموذج الرفع</li>
+            <li>انقر على "Commit changes"</li>
+        </ol>
+        <p><strong>ملاحظة هامة:</strong> تأكد من رفع محتويات مجلد build، وليس المجلد نفسه. يجب أن يكون ملف index.html في الجذر.</p>
+    </div>
+    
+    <div class="step">
+        <h2>الخطوة 4: تهيئة GitHub Pages</h2>
+        <ol>
+            <li>اذهب إلى "Settings" في مستودعك</li>
+            <li>انقر على "Pages" في القائمة الجانبية</li>
+            <li>في قسم "Source"، تأكد من اختيار "gh-pages" كفرع للنشر، والمجلد "/ (root)"</li>
+            <li>انقر على "Save"</li>
+            <li>انتظر بضع دقائق حتى يتم نشر الموقع</li>
+            <li>سيظهر رابط الموقع أعلى الصفحة (مثل https://ahmed20144.github.io/ahmed8/)</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <h2>ملاحظات إضافية</h2>
+        <ul>
+            <li>إذا كنت تريد تحديث الموقع، قم ببناء المشروع مرة أخرى باستخدام <code>npm run build</code>، ثم كرر الخطوة 3.</li>
+            <li>يمكنك أيضًا إضافة ملف <code>.nojekyll</code> فارغ في جذر فرع gh-pages لتجنب معالجة Jekyll للملفات.</li>
+            <li>للتحقق من أن الموقع يعمل بشكل صحيح، تأكد من وجود ملف index.html في جذر فرع gh-pages.</li>
+        </ul>
+    </div>
+    
+    <p style="text-align: center; margin-top: 40px;">
+        <a href="https://ahmed20144.github.io/ahmed8/" class="btn" target="_blank">زيارة الموقع</a>
+    </p>
+</body>
+</html> 
